@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "FZoOmKZ34CloLI3tJN646B9A4BCQ+FzbqrYINXepn419IXKTv7keAzR0LIFq0QwD5LLZrJ93Y3aGOMqnskbb7g==",
+  "success": true,
+  "projectFilePath": "/home/student/MyAppIsStupid/MyAppIsStupid.csproj",
+  "expectedPackageFiles": [
+    "/home/student/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
