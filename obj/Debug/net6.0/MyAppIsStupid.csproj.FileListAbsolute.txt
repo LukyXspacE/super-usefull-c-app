@@ -1,0 +1,15 @@
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.csproj.AssemblyReference.cache
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.GeneratedMSBuildEditorConfig.editorconfig
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.AssemblyInfoInputs.cache
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.AssemblyInfo.cs
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.csproj.CoreCompileInputs.cache
+/home/student/MyAppIsStupid/bin/Debug/net6.0/MyAppIsStupid
+/home/student/MyAppIsStupid/bin/Debug/net6.0/MyAppIsStupid.deps.json
+/home/student/MyAppIsStupid/bin/Debug/net6.0/MyAppIsStupid.runtimeconfig.json
+/home/student/MyAppIsStupid/bin/Debug/net6.0/MyAppIsStupid.dll
+/home/student/MyAppIsStupid/bin/Debug/net6.0/MyAppIsStupid.pdb
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.dll
+/home/student/MyAppIsStupid/obj/Debug/net6.0/refint/MyAppIsStupid.dll
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.pdb
+/home/student/MyAppIsStupid/obj/Debug/net6.0/MyAppIsStupid.genruntimeconfig.cache
+/home/student/MyAppIsStupid/obj/Debug/net6.0/ref/MyAppIsStupid.dll

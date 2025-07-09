@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rw6hM7FZTc2+xAG25cWDG4Q2CHbi642iopzrWozbjtGFpQ0gOSSbvLN6tUqOj8zuv9V5xxgmPQNXhQk1xrO7pA==",
+  "success": true,
+  "projectFilePath": "/home/student/lagJakHovado/cpu/cpu.csproj",
+  "expectedPackageFiles": [
+    "/home/student/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

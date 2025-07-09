@@ -1,0 +1,15 @@
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.csproj.AssemblyReference.cache
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.GeneratedMSBuildEditorConfig.editorconfig
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.AssemblyInfoInputs.cache
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.AssemblyInfo.cs
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.csproj.CoreCompileInputs.cache
+/home/student/lagJakHovado/cpu/bin/Debug/net6.0/cpu
+/home/student/lagJakHovado/cpu/bin/Debug/net6.0/cpu.deps.json
+/home/student/lagJakHovado/cpu/bin/Debug/net6.0/cpu.runtimeconfig.json
+/home/student/lagJakHovado/cpu/bin/Debug/net6.0/cpu.dll
+/home/student/lagJakHovado/cpu/bin/Debug/net6.0/cpu.pdb
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.dll
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/refint/cpu.dll
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.pdb
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/cpu.genruntimeconfig.cache
+/home/student/lagJakHovado/cpu/obj/Debug/net6.0/ref/cpu.dll
