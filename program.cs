@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading;
 //using Math;
 
-
 static void print (string txt)
 {
     Console.WriteLine(txt);
@@ -14,75 +13,21 @@ static void printInt (int txt)
     Console.WriteLine(txt);
 }
 
-static void lag()
-    {
-        // A list to hold large objects to cause significant memory usage
-        List<byte[]> memoryHog = new List<byte[]>();
-
-        // Infinite loop to continuously allocate memory and stress the CPU
-        long iteration = 0;
-        while (true)
-        {
-            // Increase memory usage drastically
-            // Allocating 500MB each iteration for more intensive memory use
-            byte[] data = new byte[500 * 1024 * 1024]; // 500 MB
-            memoryHog.Add(data);
-
-            // Run a CPU-heavy operation like calculating a large prime number (heavy computation)
-            long number = 1000000000 + iteration * 1000; // Increase the number each time
-            bool isPrime = IsPrime(number);
-
-            // Optionally, log memory usage and prime check (Can be commented out for better performance)
-            //Console.WriteLine($"Iteration: {iteration}, Allocated {memoryHog.Count * 500} MB, Prime check result: {isPrime}");
-
-            // Increment iteration for new prime numbers
-            iteration++;
-        }
-    }
-
-    // Pure CPU stress (Prime number check with larger numbers or other complex calculations)
-    static void CreateLag()
-    {
-        long iteration = 0;
-        while (true)
-        {
-            // Run CPU-heavy operations like factorials or prime number checks with large inputs
-            long number = 1000000000 + iteration * 1000; // Increasing number for larger calculations
-            bool isPrime = IsPrime(number);
-
-            // Optionally, display results (can be commented out for performance)
-            //Console.WriteLine($"Iteration: {iteration}, Prime check for {number}: {isPrime}");
-
-            iteration++;
-        }
-    }
-
-    // Optimized method to check if a number is prime (CPU-heavy operation)
-    static bool IsPrime(long number)
-    {
-        if (number <= 1)
-            return false;
-
-        // Optimized primality check (checking up to the square root)
-        for (long i = 2; i <= Math.Sqrt(number); i++)
-        {
-            if (number % i == 0)
-                return false;
-        }
-        return true;
-    }
-
-
-
-
-
-
 //calculator kterej je sigma jak neco
 static void sigmaCalculator()
 {
 
+List<string> history = new List<string>();
 
+while (true)
+{
+print("what woud you like to do (calculate/history)");
+string mode = Console.ReadLine();
+
+if (mode == "calculate")
+{
 string operation = "";
+string formula = "";
 
 List<int> numbers = new List<int>();
 List<string> oper = new List<string>();
@@ -102,33 +47,39 @@ while (operation != "=")
 
 int count = 0;
 int temp = 0;
-while (count <= oper.Count)
+int priority;
+while (count < oper.Count)
+{
+
+while (priority > 0)
 {
     if  (oper[count] == "=")
     {
         Console.WriteLine("vysledek je");
         Console.WriteLine(temp);
+        formula += (temp);
+        history.Add(formula);
     }
     else if (oper[count] == "+")
     {
-        temp += numbers[count];
+        temp += numbers[count+1];
+        formula += numbers[count] + " " + oper[count+1];
     }
     else if (oper[count] == "-")
     {
         temp -= numbers[count];
+        formula += numbers[count] + " " + oper[count+1];
     }
     else if (oper[count] == "*")
     {
         temp *= numbers[count];
+        formula += numbers[count] + " " + oper[count+1];
     }
     else if (oper[count] == "/")
     {
         temp /= numbers[count];
+        formula += numbers[count] + " " + oper[count+1];
     }
-    //else if (oper[count] == "^")                     bro this is actualy xor.... 
-    //{
-        //temp = temp^numbers[count];
-    //}
     else
     {
         Console.WriteLine("Like are you stoopid??????????  [said in angry asian voice]");
@@ -137,7 +88,23 @@ while (count <= oper.Count)
 
     count++;
 }
+}
+}
+else if (mode == "history")
+{
+    foreach (string kkt in history)
+    {
+        Console.WriteLine(kkt);
+    }
+}
 
+else
+{
+    print("this calculator doesnt work with people with autism");
+}
+
+
+}
 
 }
 
@@ -596,10 +563,6 @@ static void casino ()
         //break;
         return;
     }
-    else
-    {
-        print("thats a lot of money");
-    }
 
     while (money >= 0)
     {
@@ -608,17 +571,19 @@ static void casino ()
         bool sucsessProMax = int.TryParse(Console.ReadLine(), out bet);
         if (sucsessProMax == false)
         {
-            print("ur getting kiked out of the casino and we take all ur money. we hoe to enjoy being homeless");
+            print("ur getting kiked out of the casino and we take all ur money. we hope to enjoy being homeless");
             break;
         }
-        else
-        {
-            print("thats a lot of money");
-        }
 
-        if (bet > money)
+        int betted = bet;
+
+        print("what number do you think there is going to be?");
+        int guess;
+        bool sucsessProMaxUltimate = int.TryParse(Console.ReadLine(), out guess);
+        if (sucsessProMaxUltimate == false)
         {
-            print("u poor af");
+            print("ur getting kiked out of the casino and we take all ur money. we hope to enjoy being homeless");
+            break;
         }
 
         money -= bet;
@@ -638,29 +603,38 @@ static void casino ()
         if (num1 == num2 && num2 == num3)
         {
             print("big win - jackpot");printInt(num1);
-            money += (bet * 100);
-            print("u win:");
-            printInt(bet*100);
-            print("money billance:");
-            printInt(money);
+            bet *= 69;
+
         }
 
         else if (num1 == num2 || num2 == num3 || num1 == num3)
         {
             print("not so big win");
-            money += (bet * 4);
+            bet *= 3;
+        }
+
+
+        if (guess == num1 || guess == num2 || guess == num3)
+        {
+            bet *= 2;
+        }
+
+        if (betted != bet)
+        {
             print("u win:");
-            printInt(bet*4);
+            printInt(bet);
+            money += bet;
             print("money billance:");
             printInt(money);
         }
-
+        
         else
         {
             print("oooo poor, u loose");
             print("money billance:");
             printInt(money);
         }
+
         
         
 
